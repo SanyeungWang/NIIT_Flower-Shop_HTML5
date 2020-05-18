@@ -1,0 +1,268 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/registration.css">
+    <script type="text/javascript" src="js/registration.js"></script>
+
+</head>
+<script src="js/jquery-3.4.0.min.js"></script>
+
+<script>
+    
+        $(document).ready(function ()
+            {
+               
+               $("#button").mouseup(function ()
+               {
+                   $("#button").css("background-color","aqua");
+               });
+    
+                 $("#button").mousedown(function ()
+               {
+                   $("#button").css("background-color","burlywood");
+               });
+            }
+        );
+        </script>
+<script>
+        function checkName(){
+            if(document.getElementById("Name").value=="")
+                {
+                    document.getElementById("Name").style.backgroundColor="lightpink";
+                    return false;
+                }
+                else
+                {
+                    document.getElementById("Name").style.backgroundColor="rgb(174, 226, 226)";
+                    return true;
+                }
+            }
+            function checkEmail(){
+            if(document.getElementById("Email").value=="")
+            {
+                document.getElementById("Email").style.backgroundColor="lightpink";
+                return false;
+            }
+            else
+            {
+                document.getElementById("Email").style.backgroundColor="rgb(174, 226, 226)";
+                return true;
+            }
+            }
+        function checkContact(){
+                    var number = /^\d{11}$/;
+                    if(document.getElementById("Contact").value=="")
+                    {
+                        document.getElementById("Contact").style.backgroundColor="lightpink";
+                        return false;
+                    }
+                    else if(!document.getElementById("Contact").value.match(number))
+                    {
+                        document.getElementById("Contact").style.backgroundColor="lightpink";
+                        return false;
+                    }
+                    else
+                    {
+                        document.getElementById("Contact").style.backgroundColor="rgb(174, 226, 226)";
+                        return true;
+                    }
+            }
+        function checkDOB(){
+            if(document.getElementById("dob").value=="")
+            {
+                document.getElementById("dob").style.backgroundColor="lightpink";
+                return false;
+            }
+            else
+            {
+                document.getElementById("dob").style.backgroundColor="rgb(174, 226, 226)";
+                return true;
+            }
+            }
+       
+
+       function checkPassword(){
+            if(document.getElementById("Password").value=='')
+            {
+                document.getElementById("Password").style.backgroundColor="lightpink";
+                return false;
+            }
+            else
+            {
+                document.getElementById("Password").style.backgroundColor="rgb(174, 226, 226)";
+                return true;
+            }
+            }
+
+             function check_C_Password(){
+            if(document.getElementById("CPassword").value=='')
+            {
+                document.getElementById("CPassword").style.backgroundColor="lightpink";
+                return false;
+            }
+            else
+            {
+                document.getElementById("CPassword").style.backgroundColor="rgb(174, 226, 226)";
+                return true;
+            }
+            }
+            function ConfirmthePassword(){
+            if(document.getElementById("Password").value!=document.getElementById("CPassword").value)
+            {
+                document.getElementById("CPassword").style.backgroundColor="lightpink";
+                return false;
+            }
+            else
+            {
+                document.getElementById("CPassword").style.backgroundColor="rgb(174, 226, 226)";
+                return true;
+            }
+            }
+        function register()
+        {
+            if(checkName()&&checkContact()&&checkDOB()&&checkPassword()&&check_C_Password()&&ConfirmthePassword())
+            {
+                check();
+            }
+            else
+            {
+                alert("Check The Errors..!");
+                return false;
+            }
+
+            function check()
+            {
+            var userid=document.getElementById("Name");
+            var age=document.getElementById("dob");
+            var userpass1=document.getElementById("Password");
+            var userpass2=document.getElementById("CPassword");
+                var userDetails = JSON.parse(localStorage.getItem("userDetails"));
+                if(userpass1.value != userpass2.value){
+                    alert("password not matching");
+                    return false;
+                }
+                else{
+                    if(userDetails==null)
+                        userDetails = [];
+                    else{
+                        for (i = 0; i < userDetails.length; i++) {
+                            if (userDetails[i].userid == userid.value) {
+                                alert("User is already registered !!");
+                                return false;
+                            }
+                        }
+                    }
+                    userDetails.push({"userid":userid.value, "password":userpass1.value,"age":age.value});
+                    localStorage.setItem("userDetails", JSON.stringify(userDetails));
+                    alert("Registration successful");
+                    return true;
+                }
+        }
+        
+        }
+            </script>
+
+<body>
+    <a id="iu" href="home.html" style="position:absolute; right:3%;z-index:999;"></a>
+    <div id="bid2">
+
+        <form action="login.html" onsubmit="return register()">
+            <Table width="30%" id="Registration1">
+                <tr>
+                    <td colspan="2">
+                        <center>
+                            <h2 style="font-size: 300%;
+                                font-family: Script MT Bold;
+                                text-align: center;
+                                margin-top: 25px;
+                                color: #75b483;
+                                ">Registration</h2>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input type="text" placeholder="Your Name" id="Name" title="Please fill in this filed" >
+                    </td>
+                </tr>
+
+                <tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="text" placeholder="Enter Email" value="" id="Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td>
+                        <input type="text" placeholder="Enter Contact" value="" id="Contact">
+                    </td>
+                </tr>
+                <tr>
+                        <td>DOB</td>
+                        <td>
+                            <input type="date" placeholder="Choose Date" value="" id="dob">
+                        </td>
+                    </tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" placeholder="Your Password" value="" id="Password">
+                </td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td>
+                        <input type="password" placeholder="Repeat password" value="" id="CPassword">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="b" type="submit" value="Register" class="radio">
+                    </td>
+                    <td>
+                        <BUTTON type="reset" class="radio">Reset</BUTTON>
+                    </td>
+                </tr>
+            </table>
+            <center>
+                <div style="color:#1b2529">
+                    Already registered?
+                    <a href="login.html" style="color: rgb(71, 255, 141)">Log in now</a>
+                </div>
+            </center>
+        </form>
+        <footer>
+            <div id="footer" style="color:rgb(6, 22, 0)">
+                <div id="copy_right">
+                    <p>© 2019 Countrywideflower.inc All Rights Reserved.</p>
+                </div>
+                <div class="sub_footer">
+
+                    <img src="images/taqw/1.jpg" width="60px" height="60px" style="border-radius: 30px">
+                    <p id="55">Telephone Number:
+                        65256863</p>
+                </div>
+                <div class="sub_footer">
+                    <img src="images/taqw/2.jpg" width="60px" height="60px" style="border-radius: 30px">
+                    <p id="55">Address: #16 Wencui
+                        Ningxia
+                        University</p>
+                </div>
+                <div class="sub_footer">
+                    <img src="images/taqw/3.jpg" width="60px" height="60px" style="border-radius: 30px">
+                    <p id="55">QQ: 2019666</p>
+                </div>
+                <div class="sub_footer">
+                    <img src="images/taqw/4.jpg" width="90px" height="60px" style="border-radius: 30px">
+                    <p id="55">Wechat：Countrywideflower121</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

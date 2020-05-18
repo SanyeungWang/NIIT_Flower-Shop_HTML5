@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/bee.css">
+    <script src="js/jquery-3.4.0.min.js">
+    </script>
+
+    <script>
+
+        $($document).ready(function () {
+            $("#username").focus(function () {
+                $("#username").css("background-color", "yellow");
+            });
+
+            $("#username").blur(function () {
+                $("#username").css("background-color", "aqua");
+            });
+        });
+
+
+    </script>
+</head>
+
+<body>
+
+    <script>
+        var uname;
+        var upass;
+
+        function Login() {
+
+            var userid = document.getElementById("username");
+            var userpass3 = document.getElementById("password");
+            var userDetails = JSON.parse(localStorage.getItem("userDetails"));
+            if (userDetails != null) {
+                for (i = 0; i < userDetails.length; i++) {
+                    if (userDetails[i].userid == userid.value && userDetails[i].password == userpass3.value) {
+                        alert("Login Success !!");
+                        localStorage.Name = userid.value;
+                        localStorage.Password = userpass3.value;
+                        return true;
+                    }
+                }
+            }
+            alert("Login failed");
+
+            return false;
+        }
+
+    </script>
+    <a id="iu" href="home.html" style="position:absolute; right:3%;z-index:999;"></a>
+    <div id="main">
+        <form action="home.html" method="get">
+            <br><br>
+            <h1 style="font-size: 300%;
+            font-family: Script MT Bold;
+            text-align: center;
+            margin-top: 25px;
+            color: #75b483;
+            ">Login Page</h1>
+            Username:
+            <input type="text" id="username">
+            <br> Password:
+            <input type="passowrd" id="password">
+            <br><br><br><br><br><br><br><br>
+            <input type="submit" value="Login" onclick="return Login()" id="button1">
+            <button id="button2">
+                <a href="Registration.html">New user</a>
+            </button>
+            <a href="ForgetPassword.html" id="Forgot_password">Forgot Password</a>
+        </form>
+    </div>
+
+    <div id="footerContainer">
+        <footer>
+            <div id="footer" style="color:rgb(6, 22, 0)">
+                <div id="copy_right">
+                    <p>© 2019 Countrywideflower.inc All Rights Reserved.</p>
+                </div>
+                <div class="sub_footer">
+
+                    <img src="images/taqw/1.jpg" width="60px" height="60px" style="border-radius: 30px">
+                    <p id="55">Telephone Number:
+                        65256863</p>
+                </div>
+                <div class="sub_footer">
+                    <img src="images/taqw/2.jpg" width="60px" height="60px" style="border-radius: 30px">
+                    <p id="55">Address: #16 Wencui
+                        Ningxia
+                        University</p>
+                </div>
+                <div class="sub_footer">
+                    <img src="images/taqw/3.jpg" width="60px" height="60px" style="border-radius: 30px">
+                    <p id="55">QQ: 2019666</p>
+                </div>
+                <div class="sub_footer">
+                    <img src="images/taqw/4.jpg" width="90px" height="60px" style="border-radius: 30px">
+                    <p id="55">Wechat：Countrywideflower121</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
