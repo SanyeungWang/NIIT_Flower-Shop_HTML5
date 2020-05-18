@@ -1,0 +1,11 @@
+﻿@charset "utf-8";
+/* CSS Document */
+img{display:block; border:none}
+*{margin:0; padding:0; list-style-type:none}
+a{text-decoration:none; color:#FFF}
+a:hover{ text-decoration:underline}
+.nav{font-size:15px; color:#FFF}
+.nav .hover{text-decoration:underline; color:#ffea00}
+.int-p b{ color:#c50000; font-size:16px}
+.int-p{border:20px #FFFFFF solid; background:#FFF; margin:0 25px; line-height:30px; font-size:14px; color:#777; margin-bottom:30px}
+.bottom{color:#FFF; font-size:14px}

@@ -1,0 +1,75 @@
+body {
+    background-image: url(../images/home/petal.gif);
+    background-color: rgb(168, 122, 153);
+}
+
+#username,
+#password {
+    height: 28px;
+    outline: none;
+    width: 200px;
+    background-color: rgb(160, 208, 248);
+    border: none;
+}
+
+#password,
+#username {
+    margin-top: 10px;
+}
+
+#main {
+    text-align: center;
+    height: 380px;
+    width: 370px;
+    margin: auto;
+    display: block;
+    font-family: cursive;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#button1,
+#button2,
+#button3 {
+    background-color: rgb(35, 160, 209);
+    height: 30px;
+    width: 100px;
+    border: none;
+    font-family: arial;
+    font-size: 17px;
+    margin-top: 8px;
+    color: white;
+    position: relative;
+    left: 75px;
+    ;
+
+}
+
+#button2 a {
+    font-family: arial;
+    font-size: 17px;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#Forgot_password {
+    position: relative;
+    left: 80px;
+    color: rgb(71, 255, 141);
+}
+
+#footerContainer {
+    margin-top: 56px;
+}
+
+#footer {
+    padding: 10px 0px 10px 0px;
+    background-image: linear-gradient(to right, purple, hotpink, pink, aqua);
+    opacity: 0.9;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    margin-top: 100px;
+}

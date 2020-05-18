@@ -1,0 +1,104 @@
+.input {
+    border-radius: 5px;
+    outline: none;
+    padding-left: 20px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 17px;
+    width: 200px;
+    height: 30px;
+    border: 0px;
+    box-shadow: 3px 2px 0px rgb(238, 12, 12);
+}
+
+td {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.header1 {
+    font-size: 300%;
+    font-family: Script MT Bold;
+    text-align: center;
+    margin-top: 25px;
+    color: #088ea0;
+}
+
+.login {
+    padding-left: 50%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#enter1 {
+    background-color: pink;
+    border-radius: 5px;
+    box-shadow: 3px 2px 0px #F69490;
+    outline: none;
+    border: 0px;
+}
+
+#c2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(209, 118, 231, 0.3);
+    background-image: url(../images/home/petal.gif);
+}
+
+#iu{
+    background: url(../images/home/back.png);
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
+    margin-top: 36px;
+}
+
+
+.radio {
+    color: #725e82;
+    box-shadow: 3px 2px 0px rgb(219, 29, 22);
+    border-radius: 5px;
+    outline: none;
+    border: 0px;
+    width: 40%;
+    height: 30px;
+}
+
+#copy_right
+{
+   text-align: center;
+   margin-bottom: 35px;
+}
+#footer {
+	position: relative;
+	padding: 10px 0px 10px 0px;
+	bottom: 0;
+	top: 100%;
+	background-image: linear-gradient(to right, purple, hotpink, pink, aqua);
+	width: 100%;
+	height: 120px;
+}
+.sub_footer
+{
+    float: left;
+    height: 150px;
+    width: 24.5%;
+    text-align: center;
+}
+#copy_right
+{
+   text-align: center;
+   margin-bottom: 35px;
+}
+
+.sub_footer
+{
+    float: left;
+    height: 150px;
+    width: 24.5%;
+    text-align: center;
+}
+

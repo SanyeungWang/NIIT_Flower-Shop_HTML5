@@ -1,0 +1,16 @@
+﻿@charset "utf-8";
+/* CSS Document */
+img{display:block; border:none}
+*{margin:0; padding:0; list-style-type:none}
+a{text-decoration:none; color:#FFF}
+a:hover{ text-decoration:underline}
+.nav{font-size:15px; color:#FFF}
+.nav .hover{text-decoration:underline; color:#ffea00}
+.type-img{ background:#FFF; margin-left:; margin-bottom:21px}
+.type-img img{ border:0px solid #FFF}
+.type-kind{text-align:center; font-size:16px; padding-bottom:23px; font-weight:bold; color:#c50000}
+.type-p{line-height:25px; padding:0 20px; font-size:14px}
+.type-cont{ width:790px; margin:0 auto;padding:30px 0}
+.int-ms{float:left; font-size:20px; margin-left:80px; margin-top:30px}
+.int-ms li{line-height:60px; border-bottom:1px #CCCCCC solid; color:#990000}
+.bottom{color:#FFF; font-size:14px}

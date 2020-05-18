@@ -1,0 +1,81 @@
+.radio {
+    color: #725e82;
+    box-shadow: 3px 2px 0px rgb(219, 29, 22);
+    border-radius: 5px;
+    outline: none;
+    border: 0px;
+    width: 40%;
+    height: 30px;
+}
+#iu{
+    background: url(../images/home/back.png);
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
+    margin-top: 36px;
+}
+
+td {
+    font-size: 20px;
+    width: 400px;
+    padding: 5px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#bid2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 16;
+    background-color: rgb(158, 115, 163);
+    background-image: url(../images/home/petal.gif);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input:focus {
+    border-radius: 5px;
+    outline: none;
+    padding-left: 20px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 17px;
+    width: 200px;
+    height: 30px;
+    border: 0px;
+    box-shadow: 3px 2px 0px rgb(238, 12, 12);
+}
+
+#copy_right
+{
+   text-align: center;
+   margin-bottom: 35px;
+}
+#footer {
+	position: relative;
+	padding: 10px 0px 10px 0px;
+	bottom: 0;
+	top: 100%;
+	background-image: linear-gradient(to right, purple, hotpink, pink, aqua);
+	width: 100%;
+	height: 180px;
+}
+
+.sub_footer
+{
+    float: left;
+    height: 150px;
+    width: 24.5%;
+    text-align: center;
+}

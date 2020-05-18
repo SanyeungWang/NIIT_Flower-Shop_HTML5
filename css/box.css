@@ -1,0 +1,399 @@
+* {
+	margin: 0;
+	padding: 0px;
+
+}
+
+.box {
+	width: 760px;
+	height: 300px;
+	border: 0px solid #0000ff;
+	margin-top: 100px;
+	margin-left: 380px;
+	position: relative;
+
+}
+
+.pic {
+	width: 760px;
+	height: 300px;
+	background: #ffccff;
+	overflow: hidden;
+}
+
+.pic ul li {
+	list-style-type: none;
+	width: 760px;
+	height: 300px;
+	position: relative;
+}
+
+.pic ul li .img1 {
+	position: absolute;
+	left: -760px;
+	top: 0px;
+}
+
+.nav {
+	width: 100px;
+	height: 14px;
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+
+}
+
+.nav ul li {
+	list-style-type: none;
+	width: 14px;
+	height: 14px;
+	border: 1px solid white;
+	float: left;
+	margin-right: 2px;
+
+}
+
+.nav ul .bg {
+	background: orange;
+	border: none;
+	width: 14px;
+	height: 14px;
+
+}
+
+#p {
+	position: fixed;
+	padding-left: 190px;
+	border-radius: 16px;
+}
+
+header {
+	width: 100%;
+	height: 90px;
+	top: 0px;
+	padding-top: 10px;
+	position: fixed;
+	background-image: linear-gradient(to right, purple, hotpink, pink, aqua);
+}
+
+html,
+body {
+	height: 100%;
+}
+
+#footer {
+	position: relative;
+	padding: 10px 0px 10px 0px;
+	bottom: 0;
+	top: 100%;
+	background-image: linear-gradient(to right, purple, hotpink, pink, aqua);
+	width: 100%;
+	height: 150px;
+}
+
+.sub_footer
+{
+    float: left;
+    height: 150px;
+    width: 24.5%;
+    text-align: center;
+}
+#copy_right
+{
+   text-align: center;
+   margin-bottom: 35px;
+}
+
+
+h1 {
+	text-align: center;
+	font-size: 60px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: rgb(109, 0, 109);
+}
+
+body {
+	background: url('..images/home/petal.gif');
+	background-size: repeat;
+}
+
+a {
+	text-decoration: none;
+	color: hotpink;
+
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul li {
+	float: left;
+	width: 253px;
+	height: 60px;
+	background-color: pink;
+	opacity: 0.99;
+	color: rgb(22, 81, 168);
+	line-height: 60px;
+	text-align: center;
+	font-family: impact;
+	letter-spacing: 1px;
+	font-size: 26px
+}
+
+ul li:hover {
+	background-color: rgb(105, 105, 185);
+}
+
+#home {
+	color: darkblue;
+}
+
+#main {
+	height: 240px;
+	width: 100%;
+	background-image: linear-gradient(to right, purple, hotpink, pink, aqua);
+}
+
+#loginimg {
+	border-radius: 10%;
+	height: 30px;
+	width: 30px;
+	margin-left: 1210px;
+	margin-top: -46px;
+}
+
+#s{
+	margin-top: 25px;
+	padding-left: 20px;
+	position:absolute;
+}
+
+#k{
+	margin-top: 25px;
+	position:absolute;
+	padding-left: 1165px;
+}
+
+
+.container-content-section
+{
+    border: none;
+    height: 55px;
+}
+.section-header
+{
+    height: 55px;
+    width: 100%;
+    color: rgb(196, 70, 70);
+    background-color: rgb(22, 61, 87);
+    margin:0;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 28px;
+    overflow: hidden;
+    padding-left: 25px;
+}
+.shop-item
+{
+    height: 210;
+    width: 215px;
+    float: left;
+    margin-bottom: 45px;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 8px;
+    
+}
+.shop-item-title
+{
+    text-align: center;
+    height: 33px;
+    width: 210px;
+    color: #3498DB;
+    font-weight: bolder;
+    font-family: cursive;  
+}
+.shop-item-title:hover
+{
+    color: green;
+}
+.shop-item-image
+{
+    height: 180px;
+    width: 215px;
+    border: 1px solid rgb(180, 243, 138);
+    padding: 0;
+    background-color: rgb(221, 63, 95);
+    margin-top: 6px;
+}
+.shop-item-details
+{
+    height: 36px;
+    width: 215px;
+    padding-top: 7px;
+    background-color: tomato;
+}
+
+.shop-item-price
+{
+    color: white;
+    font-weight: bold;
+    margin-left: -60px;
+    line-height: 30px;
+}
+.shop-item-button
+{
+    border: none;
+    height: 28px;
+    width: 85px;
+    background-color: #3498DB; 
+    float: right;
+    margin-right: 6px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.btn-primary-shop-item-button:hover
+{
+    color: chartreuse;
+}
+
+.shopping-item-count
+{
+    height: 21px;
+    width: 21px;
+    color: red;
+    position: relative;
+    left: 32px;
+    top: -55px;
+    font-family: cursive;
+    font-weight: bold;
+    background-color: yellow;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 23px;
+    
+}
+.shopping_kart
+{
+   height: 45px;
+   width: 2px;
+   position: relative;
+   left: 1060px;
+   top: -42px;
+   
+}
+
+#Shopping_items{
+    height: 500px;
+    width: 450px;
+    background-color: lightblue;
+    position: absolute;
+    left: -380px;
+    top: 42px;
+    text-align: justify;
+    opacity: 1;
+}
+
+.cart_item_image
+{
+    border: 1px solid lightgreen;
+    position: inherit;
+    border-radius: 4px;
+    
+    
+}
+.cart_item_title
+{
+    color: black;
+    position: relative;
+    left: 10px;
+    line-height: -77px;
+    top: -20px;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 12px;
+}
+.cart_price
+{
+    position: relative;
+    left: 220px;
+    top: -40px;
+    font-family: cursive;
+    font-size: 12px;
+    font-weight: bold;
+} 
+.cart_quantity_input
+{
+    position: relative;
+    left: 280px;
+    top: -62px;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid lightgreen;
+    font-family: cursive;
+    font-size: 12px;
+    font-weight: bold;
+}
+.btn-danger
+{
+    height: 22px;
+    width: 65px;
+    background-color: tomato;
+    border: none;
+    font-family: cursive;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    left: 290px;
+    top: -65px;
+}
+.Cart_total_title
+{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 290px;
+}
+.cart_total_price
+{
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    left: 300px;
+    color: blue;
+}
+.btn_primary
+{
+    border: none;
+    height: 35px;
+    width: 100px;
+    background-color: #3498DB; 
+    margin-right: 6px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-left: 180px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+.cart_row
+{
+  height: 120px;
+  border-bottom: 1px solid lightgreen;
+  padding-bottom: 0;
+}
+
+#jer{
+    
+}
